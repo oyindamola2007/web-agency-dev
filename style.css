@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+
+body{
+    background-color: rgb(34, 32, 32);
+}
+nav{
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px;
+    height: 50px;
+    background-color: rgba(53, 50, 50, 0.918);
+    border-radius: 50px;
+    margin-left: 160px;
+    margin-top: 70px;
+
+}    
+
+.navlogo img{
+    width: 200px;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    font-size: 20px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks a::after,
+.navlinks a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    background: purple;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+
+}
+
+.navlinks a:hover::after,
+.navlinks a:hover::before{
+    transform: scaleX(1);
+}
+
+.servicebutton button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(107, 8, 107);
+    border-radius: 50px;
+    border: none;
+}
+
+.servicebutton button a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+
+}
