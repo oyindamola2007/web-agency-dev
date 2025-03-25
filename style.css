@@ -40,6 +40,10 @@ nav{
     position: relative;
 }
 
+.Navbugger{
+    display: none;
+}
+
 .navlinks a::after,
 .navlinks a::before{
     content: "";
@@ -73,4 +77,36 @@ nav{
     font-size: 17px;
     color: white;
 
+}
+
+@media screen and (max-width :900px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        
+        margin-left: 30px;
+        width: 370px;
+        height: 80px;
+    }
+
+    .navlinks{
+        position: absolute;
+        top: -100px;
+        left: 0;  
+    }
+
+    .navlogo img{
+        width: 140px;
+    }
+
+    .servicebutton{
+        position: absolute;
+        top: -100px;
+        left: 0; 
+    }
+
+    .Navbugger{
+        display: block;
+        font-size: 30px;
+    }
 }
