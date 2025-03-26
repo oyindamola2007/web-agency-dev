@@ -7,17 +7,23 @@
 body{
     background-color: rgb(34, 32, 32);
 }
+
 nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
     display: flex;
     padding: 20px 60px;
     justify-content: space-between;
     align-items: center;
-    width: 1250px;
-    height: 50px;
+    width: 1200px;
+    height: 60px;
     background-color: rgba(53, 50, 50, 0.918);
     border-radius: 50px;
-    margin-left: 160px;
-    margin-top: 70px;
+    margin-top: 50px;
+    padding-top: 20px;
 
 }    
 
@@ -79,11 +85,149 @@ nav{
 
 }
 
+.aboutsections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 150px 100px;
+    font-size: 20px;
+   border-radius: 20px;
+   height: 300px;
+
+}
+.aboutsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 150px 100px;
+    margin-top: 50px;
+    font-size: 20px;
+   border-radius: 20px;
+   height: 300px;
+}
+
+.about{
+   width: 50%;
+   
+}
+.about h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sections h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sections{
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 40%;
+}
+
+.designsections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    gap: 50px;
+}
+
+.designsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid;
+    
+}
+
+.sections i{
+    font-size: 30px;
+    color: purple;
+}
+
+
+.servicesections{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    color: white;
+
+}
+.servicesection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.serviceheader h2{
+    font-size: 30px;
+}
+.servicebox{
+    width: 50%;
+    background-color: black;
+    height: 50%;
+    border: purple 1px solid;
+    border-radius: 20px;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.serviceboxs{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.boxfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    gap: 10px;
+    background-color: purple;
+    border-radius: 50px;
+}
+
+.boxfooter i{
+    font-size: 10px;
+}
+
+.boxbody{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.boxicon i{
+    font-size: 50px;
+    color: purple;
+}
+.boxxfooter{
+    display: flex;
+    justify-content: flex-end;
+}
 @media screen and (max-width :900px) {
-    nav{
+    .nav{
         display: flex;
         justify-content: space-between;
-        
         margin-left: 10px;
         width: 360px;
         height: 80px;
@@ -108,5 +252,39 @@ nav{
     .Navbugger{
         display: block;
         font-size: 30px;
+    }
+
+    .aboutsection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        height: 950px;
+        width: 100%;
+    }
+
+    .sections{
+        display: flex;
+        justify-self: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about{
+        width: 100%;
+    }
+
+    .serviceboxs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .servicebox{
+        width: 100%;
     }
 }
