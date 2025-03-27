@@ -18,8 +18,9 @@ nav{
     padding: 20px 60px;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
-    height: 60px;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
     background-color: rgba(53, 50, 50, 0.918);
     border-radius: 50px;
     margin-top: 50px;
@@ -91,7 +92,7 @@ nav{
     align-items: center;
     background-color: white;
     width: 100%;
-    padding: 150px 100px;
+    padding: 150px 5%;
     font-size: 20px;
    border-radius: 20px;
    height: 300px;
@@ -103,8 +104,8 @@ nav{
     align-items: center;
     background-color: white;
     width: 100%;
-    padding: 150px 100px;
-    margin-top: 50px;
+    padding: 200px 100px;
+    margin-top: 150px;
     font-size: 20px;
    border-radius: 20px;
    height: 300px;
@@ -159,7 +160,7 @@ nav{
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 110px;
     color: white;
 
 }
@@ -175,7 +176,8 @@ nav{
     font-size: 30px;
 }
 .servicebox{
-    width: 50%;
+    max-width: 600px;
+    width: 100%;
     background-color: black;
     height: 50%;
     border: purple 1px solid;
@@ -192,6 +194,7 @@ nav{
     justify-self: center;
     align-items: center;
     gap: 30px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -199,7 +202,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    max-width: 100%;
+    width: auto;
     height: 40px;
     gap: 10px;
     background-color: purple;
@@ -223,6 +227,186 @@ nav{
 .boxxfooter{
     display: flex;
     justify-content: flex-end;
+}
+
+.header h1{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.Testimoniessectionone{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 90px;
+    font-size: 20px;
+    color: black;
+    gap: 60px;
+}
+
+.testominyboxxs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Testimoniessections{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Testimoniessectiontwo{
+    padding-top: 230px;
+}
+.testomibebox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    padding-left: 40px;
+    background-image: linear-gradient(to left,black,grey);
+    border-radius: 20px;
+    height: 180px;
+    color: white;
+}
+.testimonyprofile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profileimage img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.skillslist{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 40px 60px;
+}
+
+.skills{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+  background-image: linear-gradient(to left,rgb(6, 6, 104),rgb(99, 5, 99));
+  padding: 10px;
+  border-radius: 20px;
+    color: white;
+   text-align: center;
+}
+
+.serviceslisting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.contactsection{
+    /* background-color: black; */
+    padding: 60px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.contexttext{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    max-width: 100%;
+    width: auto;
+    height: 400px;
+    color: black;
+    padding: 30px 30px;
+    border-radius: 70px;
+    font-size: 35px;
+}
+
+.contactussection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    background-color: rgba(131, 5, 131, 0.932);
+    border-radius: 50px;
+    width: 400px;
+    height: 200px;
+    padding: 30px 30px;
+}
+.contexttext h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.contactfooter{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.contactheader h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contactfooter img{
+    border-radius: 7px;
+}
+
+.buttonsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    color: white;
+}
+
+.bottmlogo img{
+    width: 300px;
+}
+
+.bottomnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    font-size: 30px;
+}
+
+.bottombody{
+    font-size: 16px;
+}
+
+.meetingbutton a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: purple;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
 }
 @media screen and (max-width :900px) {
     .nav{
@@ -286,5 +470,55 @@ nav{
 
     .servicebox{
         width: 100%;
+    }
+
+    .Testimoniessectiontwo{
+        position: absolute;
+        top: -10000px;
+        left: 0;  
+    } 
+
+    .Testimoniessections{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+         /* margin-left: 50px; */
+       
+    }
+   .testomibebox{
+    width: 350px;
+    font-size: 17px;
+   }
+
+    .serviceslisting{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contactsection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contexttext{
+        position: absolute;
+        top: -1000px;
+        left: 0;  
+    }
+
+    .bottomnav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .bottombody{
+        font-size: 18px;
+        padding-left: 10px;
     }
 }
