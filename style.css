@@ -503,13 +503,16 @@ nav{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        
     }
     .contexttext{
         position: absolute;
         top: -1000px;
         left: 0;  
     }
-
+.contactussection{
+    width: 300px;
+}
     .bottomnav{
         display: flex;
         justify-content: center;
