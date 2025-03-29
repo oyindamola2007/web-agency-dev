@@ -7,36 +7,55 @@
 body{
     background-color: rgb(34, 32, 32);
 }
- .navbar {
+   .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #111;
+            background: #0d0d0d;
             padding: 15px 20px;
             color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+        .logo img {
+            height: 50px;
+            width: auto;
         }
         .nav-links {
             list-style: none;
             display: flex;
+            gap: 20px;
         }
         .nav-links li {
-            margin: 0 15px;
+            transition: 0.3s;
         }
         .nav-links a {
             color: white;
             text-decoration: none;
             font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #760093;
         }
         .cta-button {
-            background: #ff9800;
+            background: #760093;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 24px;
+            border-radius: 25px;
             text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            border: 2px solid black;
+        }
+        .cta-button:hover {
+            background: black;
+            color: #760093;
         }
         .menu-toggle {
             display: none;
@@ -46,21 +65,32 @@ body{
         .menu-toggle span {
             background: white;
             height: 3px;
-            width: 25px;
-            margin: 4px 0;
+            width: 28px;
+            margin: 5px 0;
             display: block;
+            transition: 0.3s;
+        }
+        .menu-toggle.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .menu-toggle.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
         }
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
                 flex-direction: column;
-                background: #222;
+                background: #111;
                 position: absolute;
-                top: 60px;
+                top: 100%;
                 left: 0;
                 width: 100%;
                 text-align: center;
                 padding: 10px 0;
+                transition: all 0.3s ease-in-out;
             }
             .nav-links.active {
                 display: flex;
@@ -69,7 +99,6 @@ body{
                 display: flex;
             }
         }
-
 .servicebutton button a{
     text-decoration: none;
     font-size: 17px;
