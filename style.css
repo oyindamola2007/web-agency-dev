@@ -23,8 +23,8 @@ body{
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .logo img {
-            height: 100px;
-            width: auto;
+            height: 50px;
+            width: 50px;
         }
         .nav-links {
             list-style: none;
