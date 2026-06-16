@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zegon Innovations — Bringing Digital Ideas to Life</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ═══ CURSOR GLOW ═══ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"><i data-lucide="zap"></i></span>
+        <span class="logo-text">Zegon<span class="logo-accent">.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#testimonials" class="nav-link">Clients</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">
+        Get Started <i data-lucide="arrow-right" class="btn-icon"></i>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ MOBILE MENU ═══ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#testimonials" class="mobile-link">Clients</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary mobile-cta">Get Started</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <!-- Animated background orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Empowering Digital Innovation
+        </div>
+        <h1 class="hero-title reveal">
+          Bringing Your<br />
+          <span class="gradient-text">Digital Ideas</span><br />
+          to Life
+        </h1>
+        <p class="hero-sub reveal">
+          We craft tailored web & mobile experiences — blending cutting-edge technology
+          with purposeful design to accelerate your business growth.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            Start a Project <i data-lucide="arrow-right" class="btn-icon"></i>
+          </a>
+          <a href="#services" class="btn btn-ghost btn-lg">
+            Explore Services
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-target="150">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-card">
+          <div class="visual-card-inner">
+            <div class="vc-header">
+              <div class="vc-dots">
+                <span class="vc-dot red"></span>
+                <span class="vc-dot yellow"></span>
+                <span class="vc-dot green"></span>
+              </div>
+              <span class="vc-title">zegon.dev</span>
+            </div>
+            <div class="vc-body">
+              <div class="code-line"><span class="code-kw">const</span> <span class="code-var">project</span> = {</div>
+              <div class="code-line indent"><span class="code-prop">client</span>: <span class="code-str">"Your Business"</span>,</div>
+              <div class="code-line indent"><span class="code-prop">goal</span>: <span class="code-str">"Digital Growth"</span>,</div>
+              <div class="code-line indent"><span class="code-prop">tech</span>: [<span class="code-str">"React"</span>, <span class="code-str">"Node"</span>],</div>
+              <div class="code-line indent"><span class="code-prop">status</span>: <span class="code-accent">"Launching 🚀"</span></div>
+              <div class="code-line">}</div>
+              <div class="code-line">&nbsp;</div>
+              <div class="code-line"><span class="code-fn">zegon</span>.<span class="code-method">build</span>(project)</div>
+              <div class="code-line code-output"><span class="code-comment">// ✅ Success — Live in 48h</span></div>
+            </div>
+          </div>
+          <!-- Floating badges -->
+          <div class="float-badge fb-1">
+            <i data-lucide="shield-check" class="fb-icon"></i>
+            <span>Secure</span>
+          </div>
+          <div class="float-badge fb-2">
+            <i data-lucide="zap" class="fb-icon"></i>
+            <span>Fast</span>
+          </div>
+          <div class="float-badge fb-3">
+            <i data-lucide="star" class="fb-icon"></i>
+            <span>5-Star</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER STRIP ═══ -->
+  <div class="ticker-strip">
+    <div class="ticker-track">
+      <span>Web Development</span><span class="ticker-sep">◆</span>
+      <span>UI/UX Design</span><span class="ticker-sep">◆</span>
+      <span>App Development</span><span class="ticker-sep">◆</span>
+      <span>SEO Optimization</span><span class="ticker-sep">◆</span>
+      <span>E-commerce</span><span class="ticker-sep">◆</span>
+      <span>Web Security</span><span class="ticker-sep">◆</span>
+      <span>Digital Marketing</span><span class="ticker-sep">◆</span>
+      <span>Game Development</span><span class="ticker-sep">◆</span>
+      <!-- duplicate for seamless loop -->
+      <span>Web Development</span><span class="ticker-sep">◆</span>
+      <span>UI/UX Design</span><span class="ticker-sep">◆</span>
+      <span>App Development</span><span class="ticker-sep">◆</span>
+      <span>SEO Optimization</span><span class="ticker-sep">◆</span>
+      <span>E-commerce</span><span class="ticker-sep">◆</span>
+      <span>Web Security</span><span class="ticker-sep">◆</span>
+      <span>Digital Marketing</span><span class="ticker-sep">◆</span>
+      <span>Game Development</span><span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Services Built for<br /><span class="gradient-text">Modern Businesses</span></h2>
+        <p class="section-sub">From concept to launch — we deliver end-to-end digital solutions tailored to your unique goals.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="sc-icon-wrap" style="--icon-color:#6C47FF">
+            <i data-lucide="layout-dashboard"></i>
+          </div>
+          <h3 class="sc-title">UI/UX Design</h3>
+          <p class="sc-desc">Beautiful, intuitive interfaces that guide users effortlessly and convert visitors into loyal customers.</p>
+          <a href="#contact" class="sc-link">Learn more <i data-lucide="arrow-right"></i></a>
+          <div class="sc-number">01</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="sc-icon-wrap" style="--icon-color:#00D4FF">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h3 class="sc-title">Web Development</h3>
+          <p class="sc-desc">Fast, scalable, and secure websites built with modern frameworks — React, Next.js, Node, and more.</p>
+          <a href="#contact" class="sc-link">Learn more <i data-lucide="arrow-right"></i></a>
+          <div class="sc-number">02</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="sc-icon-wrap" style="--icon-color:#FF6B6B">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <h3 class="sc-title">App Development</h3>
+          <p class="sc-desc">Native and cross-platform mobile apps that deliver seamless experiences on iOS and Android.</p>
+          <a href="#contact" class="sc-link">Learn more <i data-lucide="arrow-right"></i></a>
+          <div class="sc-number">03</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="sc-icon-wrap" style="--icon-color:#FFD93D">
+            <i data-lucide="shopping-bag"></i>
+          </div>
+          <h3 class="sc-title">E-Commerce</h3>
+          <p class="sc-desc">High-converting online stores powered by optimized sales funnels, payment gateways, and smart analytics.</p>
+          <a href="#contact" class="sc-link">Learn more <i data-lucide="arrow-right"></i></a>
+          <div class="sc-number">04</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="100">
+          <div class="sc-icon-wrap" style="--icon-color:#4CD964">
+            <i data-lucide="shield"></i>
+          </div>
+          <h3 class="sc-title">Cybersecurity</h3>
+          <p class="sc-desc">Penetration testing, vulnerability audits, and security hardening to keep your systems ironclad.</p>
+          <a href="#contact" class="sc-link">Learn more <i data-lucide="arrow-right"></i></a>
+          <div class="sc-number">05</div>
+        </div>
+
+        <div class="service-card reveal" data-delay="200">
+          <div class="sc-icon-wrap" style="--icon-color:#FF9F43">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <h3 class="sc-title">Digital Marketing</h3>
+          <p class="sc-desc">Data-driven SEO, social media strategy, and content marketing that drives real, measurable growth.</p>
+          <a href="#contact" class="sc-link">Learn more <i data-lucide="arrow-right"></i></a>
+          <div class="sc-number">06</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY US ═══ -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-left reveal">
+          <p class="section-eyebrow">Why Zegon</p>
+          <h2 class="section-title">We Don't Just Build<br /><span class="gradient-text">We Elevate</span></h2>
+          <p class="why-desc">Our team blends technical mastery with creative thinking — delivering solutions that don't just work, they stand out. Every line of code. Every pixel. Every strategy. Crafted with intent.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:2rem">
+            Work With Us <i data-lucide="arrow-right" class="btn-icon"></i>
+          </a>
+        </div>
+        <div class="why-right">
+          <div class="why-card reveal" data-delay="0">
+            <div class="wc-icon"><i data-lucide="cpu"></i></div>
+            <div class="wc-text">
+              <h4>Technical Excellence</h4>
+              <p>Clean code, modern architecture, and best practices on every project.</p>
+            </div>
+          </div>
+          <div class="why-card reveal" data-delay="100">
+            <div class="wc-icon"><i data-lucide="lightbulb"></i></div>
+            <div class="wc-text">
+              <h4>Innovation-First Design</h4>
+              <p>We push creative boundaries to deliver experiences that leave lasting impressions.</p>
+            </div>
+          </div>
+          <div class="why-card reveal" data-delay="200">
+            <div class="wc-icon"><i data-lucide="users"></i></div>
+            <div class="wc-text">
+              <h4>Client-Centric Focus</h4>
+              <p>Your goals drive every decision. We listen, adapt, and deliver exactly what you need.</p>
+            </div>
+          </div>
+          <div class="why-card reveal" data-delay="300">
+            <div class="wc-icon"><i data-lucide="clock"></i></div>
+            <div class="wc-text">
+              <h4>On-Time Delivery</h4>
+              <p>Deadlines aren't just targets — they're promises we keep, every single time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&auto=format&fit=crop&q=80" alt="Team working on digital solutions" class="about-img" />
+            <div class="about-badge">
+              <i data-lucide="award"></i>
+              <div>
+                <strong>Award-Winning</strong>
+                <span>Digital Agency</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats-grid">
+            <div class="ast-card">
+              <span class="ast-num counter" data-target="150">0</span><span>+</span>
+              <span class="ast-label">Projects</span>
+            </div>
+            <div class="ast-card">
+              <span class="ast-num counter" data-target="50">0</span><span>+</span>
+              <span class="ast-label">Clients</span>
+            </div>
+            <div class="ast-card">
+              <span class="ast-num counter" data-target="8">0</span><span>+</span>
+              <span class="ast-label">Countries</span>
+            </div>
+            <div class="ast-card">
+              <span class="ast-num counter" data-target="5">0</span><span>+</span>
+              <span class="ast-label">Years</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="section-eyebrow">About Zegon</p>
+          <h2 class="section-title">We Build Digital<br /><span class="gradient-text">Futures</span></h2>
+          <p class="about-text">At Zegon Innovations, we create cutting-edge solutions in web development, cybersecurity, e-commerce, and digital marketing. Our goal is to help businesses scale, stay secure, and thrive in the digital world.</p>
+          <p class="about-text">We're not just a service provider — we're your long-term digital partner, dedicated to growth that lasts.</p>
+          <div class="about-checklist">
+            <div class="check-item"><i data-lucide="check-circle-2"></i><span>High-Quality, Production-Ready Solutions</span></div>
+            <div class="check-item"><i data-lucide="check-circle-2"></i><span>Innovative Designs That Convert</span></div>
+            <div class="check-item"><i data-lucide="check-circle-2"></i><span>Timely Delivery — Every Time</span></div>
+            <div class="check-item"><i data-lucide="check-circle-2"></i><span>Transparent, Fair Pricing</span></div>
+            <div class="check-item"><i data-lucide="check-circle-2"></i><span>Custom Solutions for Every Business</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top:2rem">
+            Schedule a Meeting <i data-lucide="calendar" class="btn-icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Client Stories</p>
+        <h2 class="section-title">What Our Clients<br /><span class="gradient-text">Say About Us</span></h2>
+      </div>
+
+      <div class="testi-carousel" id="testiCarousel">
+        <div class="testi-track" id="testiTrack">
+
+          <div class="testi-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">"Security is our top priority, and Zegon Innovations helped us fortify our systems. Their penetration testing services exposed vulnerabilities we never noticed."</p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background:linear-gradient(135deg,#6C47FF,#00D4FF)">AB</div>
+              <div>
+                <strong>Alex B.</strong>
+                <span>IT Security Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">"I struggled with my Shopify store until Zegon Innovations optimized my branding, SEO, and sales funnel. My revenue has doubled since working with them!"</p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background:linear-gradient(135deg,#FF6B6B,#FFD93D)">SJ</div>
+              <div>
+                <strong>Sarah J.</strong>
+                <span>Dropshipper & E-commerce Owner</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">"From zero engagement to viral success! Zegon Innovations redefined our social media strategy, and now our brand is thriving across every channel."</p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background:linear-gradient(135deg,#00D4FF,#4CD964)">JW</div>
+              <div>
+                <strong>John W.</strong>
+                <span>Digital Entrepreneur</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">"Working with Zegon Innovations has been incredible. Their team is skilled, highly professional, and delivered everything beyond our expectations."</p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background:linear-gradient(135deg,#FF9F43,#FF6B6B)">ET</div>
+              <div>
+                <strong>Emmanuel T.</strong>
+                <span>UI/UX Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">"Our fintech startup needed a secure and scalable platform. Zegon Innovations delivered beyond expectations — their cybersecurity solutions are top-notch!"</p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background:linear-gradient(135deg,#6C47FF,#FF6B6B)">AM</div>
+              <div>
+                <strong>Aisha M.</strong>
+                <span>CEO, PaySmart Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">"Zegon Innovations transformed our online presence! Their expertise in web development and marketing skyrocketed our sales. Highly recommended!"</p>
+            <div class="tc-author">
+              <div class="tc-avatar" style="background:linear-gradient(135deg,#4CD964,#00D4FF)">JR</div>
+              <div>
+                <strong>Jessica Richards</strong>
+                <span>CEO, GreenTech Solutions</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiPrev" aria-label="Previous">
+          <i data-lucide="arrow-left"></i>
+        </button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiNext" aria-label="Next">
+          <i data-lucide="arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TECH STACK TICKER ═══ -->
+  <section class="tech-section">
+    <div class="container">
+      <p class="tech-label reveal">Technologies We Master</p>
+    </div>
+    <div class="tech-ticker">
+      <div class="tech-track">
+        <div class="tech-item"><i data-lucide="globe"></i> React</div>
+        <div class="tech-item"><i data-lucide="server"></i> Node.js</div>
+        <div class="tech-item"><i data-lucide="database"></i> MongoDB</div>
+        <div class="tech-item"><i data-lucide="layers"></i> Next.js</div>
+        <div class="tech-item"><i data-lucide="smartphone"></i> React Native</div>
+        <div class="tech-item"><i data-lucide="shield"></i> AWS</div>
+        <div class="tech-item"><i data-lucide="code"></i> Python</div>
+        <div class="tech-item"><i data-lucide="figma"></i> Figma</div>
+        <!-- duplicates -->
+        <div class="tech-item"><i data-lucide="globe"></i> React</div>
+        <div class="tech-item"><i data-lucide="server"></i> Node.js</div>
+        <div class="tech-item"><i data-lucide="database"></i> MongoDB</div>
+        <div class="tech-item"><i data-lucide="layers"></i> Next.js</div>
+        <div class="tech-item"><i data-lucide="smartphone"></i> React Native</div>
+        <div class="tech-item"><i data-lucide="shield"></i> AWS</div>
+        <div class="tech-item"><i data-lucide="code"></i> Python</div>
+        <div class="tech-item"><i data-lucide="figma"></i> Figma</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="section contact" id="contact">
+    <div class="orb orb-contact-1"></div>
+    <div class="orb orb-contact-2"></div>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's Build<br /><span class="gradient-text">Something Great</span></h2>
+          <p class="contact-desc">Have a project in mind? We'd love to hear about it. Schedule a free consultation and let's discuss how we can help your business thrive digitally.</p>
+          <div class="contact-info">
+            <div class="ci-item">
+              <div class="ci-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <strong>Email Us</strong>
+                <span>hello@zegon.dev</span>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <strong>Location</strong>
+                <span>Available Worldwide</span>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <strong>Response Time</strong>
+                <span>Within 24 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service">
+                <option value="">Select a service...</option>
+                <option>Web Development</option>
+                <option>UI/UX Design</option>
+                <option>App Development</option>
+                <option>E-Commerce</option>
+                <option>Cybersecurity</option>
+                <option>Digital Marketing</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message <i data-lucide="send" class="btn-icon"></i>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <i data-lucide="check-circle-2" class="success-icon"></i>
+            <h3>Message Sent!</h3>
+            <p>We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon"><i data-lucide="zap"></i></span>
+            <span class="logo-text">Zegon<span class="logo-accent">.</span></span>
+          </a>
+          <p class="footer-tagline">Bringing your digital ideas to life with precision, creativity, and innovation.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i data-lucide="github"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">App Development</a></li>
+            <li><a href="#services">Cybersecurity</a></li>
+            <li><a href="#services">E-Commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="mailto:hello@zegon.dev">hello@zegon.dev</a></li>
+            <li><a href="#">Schedule Meeting</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Zegon Innovations. All rights reserved.</p>
+        <p>Crafted with <span style="color:#FF6B6B">♥</span> and precision</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
